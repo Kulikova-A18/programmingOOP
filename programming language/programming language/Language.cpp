@@ -1,10 +1,11 @@
 #include "Language.h"
 #include "Procedural.h"
 #include "ObjectOriented.h"
-Language* Language::In(ifstream &ifst)
+#include "Functional.h"
+Language* Language::In(ifstream& ifst)
 {
-	int k,error1,error2;
-	Language * lg;
+	int k, error1, error2;
+	Language* lg;
 	ifst >> k;
 	switch (k)
 	{
@@ -14,6 +15,9 @@ Language* Language::In(ifstream &ifst)
 	case 2:
 		lg = new ObjectOriented();
 		break;
+	case 3:
+		lg = new Functional();
+		break;
 	default:
 		ifst >> error1 >> error2;
 		return NULL;
@@ -22,7 +26,7 @@ Language* Language::In(ifstream &ifst)
 	return lg;
 };
 
-void Language::InCommon(ifstream &ifst)
+void Language::InCommon(ifstream& ifst)
 {
 	ifst >> mData;
 };
