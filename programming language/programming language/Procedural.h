@@ -3,8 +3,17 @@
 class Procedural : public Language
 {
 	int mAbstractDT;
+
 public:
-	void InData(ifstream &ifst); // ввод
-	void Out(ofstream &ofst); // вывод
+	void InData(ifstream& ifst); // ввод
+	void Out(ofstream& ofst); // вывод
+	void OutProc(ofstream& ofst);
 	Procedural() {} // создание без инициализации.
+
+	int GetmAbstractDT() { 
+		return mAbstractDT; 
+	}
+	void SetmAbstractDT(int mAbstractDT) { 
+		this->mAbstractDT = mAbstractDT; 
+	}
 };

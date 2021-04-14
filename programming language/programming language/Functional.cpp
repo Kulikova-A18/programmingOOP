@@ -1,4 +1,3 @@
-#pragma once
 #include "Functional.h"
 void Functional::InData(ifstream &ifst)
 {

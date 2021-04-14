@@ -13,15 +13,24 @@ int main(int argc, char* argv[])
 	}
 	ifstream ifst(argv[1]);
 	ofstream ofst(argv[2]);
-	cout << "Start" << endl;
+	cout << "Start!" << endl;
 	Container c;
 	c.In(ifst);
 	ofst << "Filled container. " << endl;
 	c.Out(ofst);
+
+	ofst << endl << endl << "Soreted container. " << endl;
+	c.Sort();
+	c.Out(ofst);
+
+	ofst << endl << endl;
+	c.OutProc(ofst); //Only Procedural
+
+	ofst << endl << endl;
 	c.Clear();
 	ofst << "Empty container. " << endl;
 	c.Out(ofst);
-	cout << "Stop" << endl;
+	cout << "Stop!" << endl;
 	system("pause");
 
 	return 0;
