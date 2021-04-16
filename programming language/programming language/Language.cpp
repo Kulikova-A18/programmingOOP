@@ -100,34 +100,24 @@ void Language::InCommon(vector<int>& tail) {
 };
 
 void Language::OutCommon(ofstream& ofst) {
-
 	ofst << "Year of programming language: " << mData << endl;
 	ofst << "Number of mentions of the language on the Internet: " << mRef << endl;
-
 };
 
 int Language::YearsPassed() {
-
 	time_t seconds = time(NULL);
 	tm* timeinfo = localtime(&seconds);
 	return (timeinfo->tm_year + 1900) - mData;
-
 };
 
 bool Language::Compare(Language* second) {
-
 	if (this != NULL && second != NULL) {
-
 		return YearsPassed() < second->YearsPassed();
 
 	}
-
 	return false;
-
 }
 
 void Language::OutProc(ofstream& ofst) {
-
 	ofst << endl;
-
 }

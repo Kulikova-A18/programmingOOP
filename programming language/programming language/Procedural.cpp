@@ -2,30 +2,24 @@
 #include <vector>
 
 void Procedural::InData(vector<int>& tail) {
-
 	if (tail.size() < 1) {
 		mIncorrectType = true;
 		return;
-	}
-
-	if (tail[0] == 1 || tail[0] == 0) {
+	} else if (tail[0] == 1 || tail[0] == 0) {
 		mAbstractDT = tail[0];
-	}
-	else {
+	} else {
 		mIncorrectType = true;
 		return;
 	}
-
 	tail.erase(tail.begin() + 0);
 	InCommon(tail);
 };
 
 void Procedural::Out(ofstream& ofst) {
-
 	if (mAbstractDT == -1);
-
-	ofst << "Procedural" << endl << "Abstrat data type: " << mAbstractDT << endl;
-
+	ofst << "Procedural" << endl 
+		<< "Abstrat data type: " 
+		<< mAbstractDT << endl;
 	OutCommon(ofst);
 };
 

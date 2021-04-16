@@ -3,19 +3,13 @@
 #include "Language.h"
 
 class Procedural : public Language {
-
 	int mAbstractDT;
-
 public:
-
 	void InData(vector<int>& tail); // ввод
 	void Out(ofstream& ofst); // вывод
 	void OutProc(ofstream& ofst);
-
 	//создание без инициализации.
-	Procedural() {
-	}
-
+	Procedural() {}
 	int GetmAbstractDT() { 
 		return mAbstractDT; 
 	}
