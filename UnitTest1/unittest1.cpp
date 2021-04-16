@@ -84,13 +84,13 @@ namespace UnitTest1
 		{
 			ifstream fin("ContainerOutputIn.txt");
 			ofstream fout("SortContainerOutput.txt");
-			ofstream f ("SortContainerExp.txt");
+			//ofstream f ("SortContainerExp.txt");
 			Container c;
 			c.In(fin);
 			c.Sort();
 			c.Out(fout);
 
-			c.Out(f);
+			//c.Out(f);
 
 			fout.close();
 			ifstream fin_exp("SortContainerExp.txt");
