@@ -1,151 +1,156 @@
 ﻿#include "Container.h"
-Container::Container()
-{
+
+Container::Container() {
 	Next = this;
 	L = NULL;
-
 }
-void Container::In(ifstream& ifst)
-{
-	while (!ifst.eof())
-	{
+
+//ввод
+void Container::In(ifstream& ifst) {
+
+	while (!ifst.eof()) {
 
 		Container* temp = new Container;
-		if ((this == this->Next) && (!ifst.tellg()))
-		{
+
+		if ((this == this->Next) && (!ifst.tellg())) {
+
 			this->L = Language::In(ifst);
 
 		}
-		else
-		{
+
+		else {
 
 			Container* counter = this->Next;
-			while (counter->Next != this)
-			{
-				counter = counter->Next;
+
+			while (counter->Next != this) {
 				//добавление в конец
+				counter = counter->Next;
 
 			}
 
 			counter->Next = temp;
 			temp->L = Language::In(ifst);
-			//temp->L->InCommon(ifst);
 			temp->Next = this;
-
-
 
 		}
 	}
+};
 
-}; // ввод
-void Container::Out(ofstream& ofst)
-{
-	if (this->Next != nullptr)
-	{
+// вывод
+void Container::Out(ofstream& ofst) {
+	if (this->Next != nullptr) {
 		ofst << "Container contains that elements:" << endl;
 		Container* temp;
 		temp = this;
 		int i = 0;
-		do
-		{
+
+		do {
 			ofst << i << ": ";
-			if (temp->L == NULL)
-			{
-				ofst << "Incorrect type of language." << endl;
+			if (temp->L == NULL) {
+				ofst << "Incorrect type of language!!!	" << endl;
+				ofst << endl;
 			}
-			else
-			{
+			else {
 				temp->L->Out(ofst);
 				ofst << "Number of years since the year the language was created (... - now): " << temp->L->YearsPassed() << endl;
+				ofst << endl;
 			}
 			temp = temp->Next;
 			i++;
 		} while (temp != this);
 	}
-	else
-	{
+	else {
 		ofst << "Container is empty!" << endl;
-
 	}
 }
-void Container::OutProc(ofstream& ofst)
-{
-	if (this->Next != nullptr)
-	{
-		ofst << endl << "Only Procedural languages." << endl;
+
+// вывод только процедуры
+void Container::OutProc(ofstream& ofst) {
+
+	if (this->Next != nullptr) {
+
+		ofst << endl << "Only Procedural languages:" << endl;
+		
 		Container* temp;
 		temp = this;
 		int i = 0;
-		do
-		{
+		
+		do {
+
 			ofst << i << ": ";
-			if (temp->L == NULL)
-			{
-				ofst << "Incorrect type of language." << endl;
+			
+			if (temp->L == NULL) {
+				ofst << endl;
 			}
-			else
-			{
+
+			else {
 				temp->L->OutProc(ofst);
+				ofst << endl;
 			}
+
 			temp = temp->Next;
 			i++;
+
 		} while (temp != this);
 	}
-	else
-	{
+	else {
 		ofst << "Container is empty!" << endl;
-
 	}
-}; // вывод
+}; 
 
-void Container::Clear()
-{
+void Container::Clear() {
+
 	Container* temp;
 	temp = this->Next;
-	while (temp != this)
-	{
+
+	while (temp != this) {
+
 		this->Next = temp->Next;
 		delete temp;
 		temp = this->Next;
 	}
+
 	this->Next = nullptr;
 };
 
-void Container::Swap(Container* first, Container* second)
-{
+void Container::Swap(Container* first, Container* second) {
+
 	Language* temp;
 	temp = first->L;
 	first->L = second->L;
 	second->L = temp;
 
-
 };
-void Container::Sort()
-{
+
+void Container::Sort() {
+
 	//if container contains 1 element, do nothing
-	if (this == this->Next)
-	{
+	if (this == this->Next) {
 		return;
 	}
+
 	Container* current = this;
+
 	bool flag = false;
 	Language* temp;
+
 	//buble sort
-	do
-	{
+	do {
 		current = this;
 		//if we didnt swap elements container is sorted
 		flag = false;
 
-		do
-		{
-			if (current->L->Compare(*current->Next->L))
-			{
+		do {
+
+			if (current->L->Compare(current->Next->L)) {
 				Swap(current, current->Next);
 				flag = true;
 			}
+
 			current = current->Next;
 
 		} while (current->Next != this);
+
 	} while (flag);
+
 };

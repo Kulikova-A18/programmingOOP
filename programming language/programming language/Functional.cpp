@@ -1,47 +1,48 @@
+#pragma once
+
 #include "Functional.h"
-void Functional::InData(ifstream &ifst)
-{
-	int inh;
-	ifst >> inh;
-	if (inh == 1 || inh == 0)
-	{
-		mLazyCalculations = inh;
-	}
-	else
-	{
-		mLazyCalculations = -1;
-	}
-	ifst >> inh;
-	if (inh == 0)
-	{
-		mType = Functional::STRICT;
-	}
-	else if (inh == 1)
-	{
-		mType = Functional::DYNAMIC;
-	}
-	InCommon(ifst);
-};
-void Functional::Out(ofstream &ofst)
-{
-	if (mLazyCalculations == -1)
-	{
-		ofst << "Incorrect type of language." << endl;
+#include <vector>
+
+void Functional::InData(vector<int>& tail) {
+
+	if (tail.size() < 2) {
+
+		mIncorrectType = true;
 		return;
 	}
-	ofst << "Functional." << endl << "lazy calculations: " << mLazyCalculations<<  endl<< "Typification: ";
-	if (mType == 0)
-	{
+
+	if (tail[0] == 1 || tail[0] == 0) {
+
+		mLazyCalculations = tail[0];
+
+		if (tail[1] == 1 || tail[1] == 0) {
+			mType = static_cast<Functional::typification>(tail[1]);
+		}
+
+		else {
+			mIncorrectType = true;
+			return;
+		}
+	}
+	else {
+		mIncorrectType = true;
+		return;
+	}
+
+	tail.erase(tail.begin() + 0, tail.begin() + 2);
+	InCommon(tail);
+};
+
+void Functional::Out(ofstream& ofst) {
+
+	ofst << "Functional." << endl << "lazy calculations: " << mLazyCalculations << endl << "Typification: ";
+
+	if (mType == 0) {
 		ofst << "Strict";
 	}
-	else if (mType == 1)
-	{
+
+	else if (mType == 1) {
 		ofst << " Dynamic";
-	}
-	else
-	{
-		ofst << "Incorrect type of language." << endl;
-		return;
 	}
 
 	OutCommon(ofst);
