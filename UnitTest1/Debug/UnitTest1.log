@@ -1,7 +1,5 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(1947,5): warning : The referenced project '..\programming language OOP\programming language OOP.vcxproj' does not exist.
-  stdafx.cpp
   unittest1.cpp
 C:\Users\USER\Desktop\TIMP\OOP\programmingOOP\programming language\programming language\Container.cpp(132,12): warning C4101: temp: неиспользованная локальная переменная
 C:\Users\USER\Desktop\TIMP\OOP\programmingOOP\programming language\programming language\Language.cpp(51,17): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-     Создается библиотека C:\Users\USER\Desktop\TIMP\OOP\programmingOOP\programming language\Debug\UnitTest1.lib и объект C:\Users\USER\Desktop\TIMP\OOP\programmingOOP\programming language\Debug\UnitTest1.exp
   UnitTest1.vcxproj -> C:\Users\USER\Desktop\TIMP\OOP\programmingOOP\programming language\Debug\UnitTest1.dll

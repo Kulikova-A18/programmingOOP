@@ -4,16 +4,16 @@ Abstrat data type: 0
 Year of programming language: 1950
 Number of mentions of the language on the Internet: 1234
 Number of years since the year the language was created (... - now): 71
-1: Object-Oriented:
-inheritance: single
-Year of programming language: 1970
-Number of mentions of the language on the Internet: 91011
-Number of years since the year the language was created (... - now): 51
-2: Functional.
+1: Functional.
 lazy calculations: 1
 Typification:  DynamicYear of programming language: 1971
 Number of mentions of the language on the Internet: 5678
 Number of years since the year the language was created (... - now): 50
+2: Object-Oriented:
+inheritance: single
+Year of programming language: 1970
+Number of mentions of the language on the Internet: 91011
+Number of years since the year the language was created (... - now): 51
 3: Object-Oriented:
 inheritance: multiple
 Year of programming language: 1973

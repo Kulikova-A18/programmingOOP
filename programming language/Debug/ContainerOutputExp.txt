@@ -1,21 +1,51 @@
 Container contains that elements:
-0: It is Procedural : abstrat data type = 0,  Develop year: 1950, References:  1234
-70 years have been passed!
-1: It is Functional : lazy calculations = 1, typification =  DYNAMIC Develop year: 1971, References:  5678
-49 years have been passed!
-2:  It is Object - Oriented: inheritance = SINGLE, Develop year: 1970, References:  91011
-50 years have been passed!
-3:  It is Object - Oriented: inheritance = MULTIPLE, Develop year: 1973, References:  121314
-47 years have been passed!
-4:  It is Object - Oriented: inheritance = INTERFACE, Develop year: 1975, References:  15161718
-45 years have been passed!
-5:  It is Object - Oriented: inheritance = MULTIPLE, Develop year: 1980, References:  192021
-40 years have been passed!
-6: It is Procedural : abstrat data type = 1,  Develop year: 2000, References:  222324
-20 years have been passed!
-7: It is Procedural : abstrat data type = 0,  Develop year: 2001, References:  252627
-19 years have been passed!
-8:  It is Object - Oriented: inheritance = SINGLE, Develop year: 2002, References:  282930
-18 years have been passed!
-9:  It is Object - Oriented: inheritance = MULTIPLE, Develop year: 2003, References:  313233
-17 years have been passed!
+0: Procedural
+Abstrat data type: 0
+Year of programming language: 1950
+Number of mentions of the language on the Internet: 1234
+Number of years since the year the language was created (... - now): 71
+1: Functional.
+lazy calculations: 1
+Typification:  DynamicYear of programming language: 1971
+Number of mentions of the language on the Internet: 5678
+Number of years since the year the language was created (... - now): 50
+2: Object-Oriented:
+inheritance: single
+Year of programming language: 1970
+Number of mentions of the language on the Internet: 91011
+Number of years since the year the language was created (... - now): 51
+3: Object-Oriented:
+inheritance: multiple
+Year of programming language: 1973
+Number of mentions of the language on the Internet: 121314
+Number of years since the year the language was created (... - now): 48
+4: Object-Oriented:
+inheritance: interface
+Year of programming language: 1975
+Number of mentions of the language on the Internet: 15161718
+Number of years since the year the language was created (... - now): 46
+5: Object-Oriented:
+inheritance: multiple
+Year of programming language: 1980
+Number of mentions of the language on the Internet: 192021
+Number of years since the year the language was created (... - now): 41
+6: Procedural
+Abstrat data type: 1
+Year of programming language: 2000
+Number of mentions of the language on the Internet: 222324
+Number of years since the year the language was created (... - now): 21
+7: Procedural
+Abstrat data type: 0
+Year of programming language: 2001
+Number of mentions of the language on the Internet: 252627
+Number of years since the year the language was created (... - now): 20
+8: Object-Oriented:
+inheritance: single
+Year of programming language: 2002
+Number of mentions of the language on the Internet: 282930
+Number of years since the year the language was created (... - now): 19
+9: Object-Oriented:
+inheritance: multiple
+Year of programming language: 2003
+Number of mentions of the language on the Internet: 313233
+Number of years since the year the language was created (... - now): 18
