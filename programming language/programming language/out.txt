@@ -15,5 +15,24 @@ inheritance: multiple
 Year of programming language: 1989
 Number of mentions of the language on the Internet: 257
 Number of years since the year the language was created (... - now): 32
+
+
+Soreted container. 
+Container contains that elements:
+0: Procedural
+Abstrat data type: 1
+Year of programming language: 1950
+Number of mentions of the language on the Internet: 3443
+Number of years since the year the language was created (... - now): 71
+1: Object-Oriented:
+inheritance: multiple
+Year of programming language: 1989
+Number of mentions of the language on the Internet: 257
+Number of years since the year the language was created (... - now): 32
+2: Procedural
+Abstrat data type: 0
+Year of programming language: 2020
+Number of mentions of the language on the Internet: 32
+Number of years since the year the language was created (... - now): 1
 Empty container. 
 Container is empty!

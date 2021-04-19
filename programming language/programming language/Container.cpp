@@ -75,3 +75,43 @@ void Container::Clear()
 	}
 	 this->Next=nullptr;
 };
+
+void Container::Swap(Container* first, Container* second)
+{
+	Language* temp;
+	temp = first->L;
+	first->L = second->L;
+	second->L = temp;
+
+
+};
+
+void Container::Sort()
+{
+	//if container contains 1 element, do nothing
+	if (this == this->Next)
+	{
+		return;
+	}
+	Container* current = this;
+	bool flag = false;
+	Language* temp;
+	//buble sort
+	do
+	{
+		current = this;
+		//if we didnt swap elements container is sorted
+		flag = false;
+
+		do
+		{
+			if (current->L->Compare(*current->Next->L))
+			{
+				Swap(current, current->Next);
+				flag = true;
+			}
+			current = current->Next;
+
+		} while (current->Next != this);
+	} while (flag);
+};

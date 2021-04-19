@@ -2,7 +2,9 @@
 #include "Language.h"
 
 class Functional : public Language {
+
 public:
+
 	enum typification {
 		STRICT,
 		DYNAMIC
@@ -26,6 +28,7 @@ public:
 	}
 
 private:
+
 	unsigned short int mLazyCalculations;
 	typification mType;
 

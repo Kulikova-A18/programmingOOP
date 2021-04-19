@@ -58,4 +58,3 @@ bool Language::Compare(Language& second)
 	return YearsPassed() < second.YearsPassed();
 
 }
-
