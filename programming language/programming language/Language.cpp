@@ -46,8 +46,7 @@ void Language::OutCommon(ofstream& ofst)
 	ofst << "\nYear of programming language: " << mData << endl;
 	ofst << "Number of mentions of the language on the Internet: " << mRef << endl;
 };
-int Language::YearsPassed()
-{
+int Language::YearsPassed() {
 	time_t seconds = time(NULL);
 	tm* timeinfo = localtime(&seconds);
 	return (timeinfo->tm_year + 1900) - mData;

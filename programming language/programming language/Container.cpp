@@ -86,8 +86,7 @@ void Container::Swap(Container* first, Container* second)
 
 };
 
-void Container::Sort()
-{
+void Container::Sort() {
 	//if container contains 1 element, do nothing
 	if (this == this->Next)
 	{

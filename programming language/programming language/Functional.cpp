@@ -23,8 +23,7 @@ void Functional::InData(ifstream& ifst)
 	InCommon(ifst);
 };
 
-void Functional::Out(ofstream& ofst)
-{
+void Functional::Out(ofstream& ofst) {
 	if (mLazyCalculations == -1)
 	{
 		ofst << "Incorrect type of language." << endl;

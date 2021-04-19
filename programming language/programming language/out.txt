@@ -17,7 +17,7 @@ Number of mentions of the language on the Internet: 257
 Number of years since the year the language was created (... - now): 32
 
 
-Soreted container. 
+Sorted container. 
 Container contains that elements:
 0: Procedural
 Abstrat data type: 1
