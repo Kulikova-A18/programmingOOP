@@ -41,23 +41,24 @@ Language* Language::In(ifstream& ifst)
 void Language::InCommon(ifstream& ifst) {
 	ifst >> mData >> mRef;
 };
+
 void Language::OutCommon(ofstream& ofst)
 {
 	ofst << "\nYear of programming language: " << mData << endl;
 	ofst << "Number of mentions of the language on the Internet: " << mRef << endl;
 };
+
 int Language::YearsPassed() {
 	time_t seconds = time(NULL);
 	tm* timeinfo = localtime(&seconds);
 	return (timeinfo->tm_year + 1900) - mData;
 };
 
-bool Language::Compare(Language& second)
-{
+bool Language::Compare(Language& second) {
 	return YearsPassed() < second.YearsPassed();
 
 }
-void Language::OutProc(ofstream& ofst)
-{
+
+void Language::OutProc(ofstream& ofst) {
 	ofst << endl;
 }

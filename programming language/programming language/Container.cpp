@@ -64,10 +64,8 @@ void Container::Out(ofstream& ofst)
 	}
 } // вывод
 
-void Container::OutProc(ofstream& ofst)
-{
-	if (this->Next != nullptr)
-	{
+void Container::OutProc(ofstream& ofst) {
+	if (this->Next != nullptr) {
 		ofst << endl << "Only Procedural languages." << endl;
 		Container* temp;
 		temp = this;

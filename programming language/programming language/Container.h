@@ -1,8 +1,7 @@
 #pragma once
 #include "Language.h"
 
-class Container
-{
+class Container {
 	Container* Next;
 	Language* L;
 
@@ -11,6 +10,7 @@ public:
 	void Out(ofstream& ofst); // вывод
 	void Clear(); // очистка контейнера от фигур
 	void OutProc(ofstream& ofst);
+
 	void Sort();
 	void Swap(Container* first, Container* second);
 

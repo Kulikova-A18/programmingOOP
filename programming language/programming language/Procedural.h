@@ -10,6 +10,7 @@ public:
 	void InData(ifstream& ifst); // ввод
 	void Out(ofstream& ofst); // вывод
 	void OutProc(ofstream& ofst);
+	
 	Procedural() {} // создание без инициализации.
 
 	int GetmAbstractDT() {

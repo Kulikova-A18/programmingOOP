@@ -11,8 +11,10 @@ int main(int argc, char* argv[])
 		cout << "incorrect command line! Waited: command in_file out_file" << endl;
 		exit(1);
 	}
+
 	ifstream ifst(argv[1]);
 	ofstream ofst(argv[2]);
+	
 	cout << "Start" << endl;
 	Container c;
 	c.In(ifst);

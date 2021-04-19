@@ -20,9 +20,11 @@ public:
 	void SetmType(typification mType) { 
 		this->mType = mType; 
 	};
+
 	unsigned short int GetmLazyCalculations() { 
 		return mLazyCalculations;
 	}
+
 	void SetmLazyCalculations(unsigned short int mLazyCalculations) { 
 		this->mLazyCalculations = mLazyCalculations; 
 	}
