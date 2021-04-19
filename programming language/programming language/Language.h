@@ -15,8 +15,12 @@ public:
 	void InCommon(ifstream& ifst);
 	void OutCommon(ofstream& ofst);
 
-	short int GetmData() { return mData; }
-	int GetmRef() { return mRef; }
+	short int GetmData() { 
+		return mData; 
+	}
+	int GetmRef() { 
+		return mRef; 
+	}
 
 	void SetmData(short int mData) { this->mData = mData; }
 	void SetmRef(int mRef) { this->mRef = mRef; }

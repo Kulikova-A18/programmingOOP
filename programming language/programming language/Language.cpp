@@ -26,8 +26,7 @@ Language* Language::In(ifstream& ifst)
 		char b;
 		ifst >> b;
 		//читатем до конца строки
-		while (!ifst.eof() && ifst.peek() != '\n')
-		{
+		while (!ifst.eof() && ifst.peek() != '\n') {
 			ifst >> b;
 		}
 		return NULL;
@@ -36,8 +35,7 @@ Language* Language::In(ifstream& ifst)
 	return lg;
 };
 
-void Language::InCommon(ifstream& ifst)
-{
+void Language::InCommon(ifstream& ifst) {
 	ifst >> mData;
 };
 void Language::OutCommon(ofstream& ofst)

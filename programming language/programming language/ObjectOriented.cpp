@@ -17,6 +17,7 @@ void ObjectOriented::InData(ifstream &ifst)
 	}
 	InCommon(ifst);
 };
+
 void ObjectOriented::Out(ofstream &ofst)
 {
 	if (mInher == 0)

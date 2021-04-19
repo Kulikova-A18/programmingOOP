@@ -6,6 +6,7 @@ class Procedural : public Language
 	int mAbstractDT;
 
 public:
+
 	void InData(ifstream& ifst); // ввод
 	void Out(ofstream& ofst); // вывод
 

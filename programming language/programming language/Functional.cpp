@@ -22,6 +22,7 @@ void Functional::InData(ifstream& ifst)
 	}
 	InCommon(ifst);
 };
+
 void Functional::Out(ofstream& ofst)
 {
 	if (mLazyCalculations == -1)

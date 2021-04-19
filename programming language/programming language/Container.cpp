@@ -68,8 +68,7 @@ void Container::Clear()
 {
 	Container *temp;
 	temp = this->Next;
-	while (temp != this)
-	{
+	while (temp != this) {
 		this->Next = temp->Next;
 		delete temp;
 		temp = this->Next;

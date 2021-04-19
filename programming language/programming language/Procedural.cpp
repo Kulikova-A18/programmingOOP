@@ -13,6 +13,7 @@ void Procedural::InData(ifstream &ifst)
 	}
 	InCommon(ifst);
 };
+
 void Procedural::Out(ofstream &ofst)
 {
 	if (mAbstractDT == -1)
