@@ -1,6 +1,5 @@
-#pragma once
 #include "Functional.h"
-void Functional::InData(ifstream &ifst)
+void Functional::InData(ifstream& ifst)
 {
 	int inh;
 	ifst >> inh;
@@ -23,14 +22,14 @@ void Functional::InData(ifstream &ifst)
 	}
 	InCommon(ifst);
 };
-void Functional::Out(ofstream &ofst)
+void Functional::Out(ofstream& ofst)
 {
 	if (mLazyCalculations == -1)
 	{
 		ofst << "Incorrect type of language." << endl;
 		return;
 	}
-	ofst << "Functional." << endl << "lazy calculations: " << mLazyCalculations<<  endl<< "Typification: ";
+	ofst << "Functional." << endl << "lazy calculations: " << mLazyCalculations << endl << "Typification: ";
 	if (mType == 0)
 	{
 		ofst << "Strict";

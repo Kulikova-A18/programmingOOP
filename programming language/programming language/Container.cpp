@@ -32,12 +32,13 @@ void Container::In(ifstream &ifst)
 	}
 
 }; // ввод
-void Container::Out(ofstream &ofst)
+
+void Container::Out(ofstream& ofst)
 {
 	if (this->Next != nullptr)
 	{
 		ofst << "Container contains that elements:" << endl;
-		Container *temp;
+		Container* temp;
 		temp = this;
 		int i = 0;
 		do
@@ -45,11 +46,12 @@ void Container::Out(ofstream &ofst)
 			ofst << i << ": ";
 			if (temp->L == NULL)
 			{
-				ofst << "Incorrect type of language."<<endl;
+				ofst << "Incorrect type of language." << endl;
 			}
 			else
 			{
 				temp->L->Out(ofst);
+				ofst << "Number of years since the year the language was created (... - now): " << temp->L->YearsPassed() << endl;
 			}
 			temp = temp->Next;
 			i++;
@@ -57,11 +59,10 @@ void Container::Out(ofstream &ofst)
 	}
 	else
 	{
-		ofst << endl;
 		ofst << "Container is empty!" << endl;
 
 	}
-}; // вывод
+} // вывод
 
 void Container::Clear()
 {

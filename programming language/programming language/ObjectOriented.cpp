@@ -35,8 +35,6 @@ void ObjectOriented::Out(ofstream &ofst)
 		ofst << "Incorrect type of language." << endl;
 		return;
 	}
-
-	ofst << endl;
 	OutCommon(ofst);
 
 };

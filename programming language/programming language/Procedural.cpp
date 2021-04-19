@@ -20,6 +20,6 @@ void Procedural::Out(ofstream &ofst)
 		ofst << "Incorrect type of language." << endl;
 		return;
 	}
-	ofst << "Procedural" << endl<< "Abstrat data type: " <<  mAbstractDT<< endl;
+	ofst << "Procedural" << endl<< "Abstrat data type: " <<  mAbstractDT;
 	OutCommon(ofst);
 };
