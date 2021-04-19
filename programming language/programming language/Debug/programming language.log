@@ -1,7 +1,5 @@
 ﻿  Container.cpp
-C:\Users\USER\Desktop\TIMP\OOP\programmingOOP\programming language\programming language\Container.cpp(97,12): warning C4101: temp: неиспользованная локальная переменная
-  Functional.cpp
-  Language.cpp
+C:\Users\USER\Desktop\TIMP\OOP\programmingOOP\programming language\programming language\Container.cpp(127,12): warning C4101: temp: неиспользованная локальная переменная
   main.cpp
   Создание кода...
   programming language.vcxproj -> C:\Users\USER\Desktop\TIMP\OOP\programmingOOP\programming language\Debug\programming language.exe

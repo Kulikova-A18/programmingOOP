@@ -57,3 +57,7 @@ bool Language::Compare(Language& second)
 	return YearsPassed() < second.YearsPassed();
 
 }
+void Language::OutProc(ofstream& ofst)
+{
+	ofst << endl;
+}

@@ -24,3 +24,7 @@ void Procedural::Out(ofstream &ofst)
 	ofst << "Procedural" << endl<< "Abstrat data type: " <<  mAbstractDT;
 	OutCommon(ofst);
 };
+void Procedural::OutProc(ofstream& ofst)
+{
+	Out(ofst);
+};

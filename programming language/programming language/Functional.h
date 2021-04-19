@@ -14,7 +14,7 @@ public:
 
 	void InData(ifstream& ifst); // ввод
 	void Out(ofstream& ofst); // вывод
-	
+
 	typification GetmType() { return mType; };
 	
 	void SetmType(typification mType) { 
