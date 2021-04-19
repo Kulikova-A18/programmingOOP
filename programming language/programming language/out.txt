@@ -1,46 +1,19 @@
 Filled container. 
 Container contains that elements:
-0: Incorrect type of language.
-Number of years since the year the language was created (... - now): 71
-1: Functional.
-lazy calculations: 1
-Typification: Strict
-Year of programming language: 1971
-Number of years since the year the language was created (... - now): 50
-2: Functional.
-lazy calculations: 0
-Typification:  Dynamic
-Year of programming language: 1971
-Number of years since the year the language was created (... - now): 50
-3: Object-Oriented:
-inheritance: single
-Year of programming language: 1970
-Number of years since the year the language was created (... - now): 51
-4: Object-Oriented:
-inheritance: multiple
-Year of programming language: 1973
-Number of years since the year the language was created (... - now): 48
-5: Object-Oriented:
-inheritance: interface
-Year of programming language: 1975
-Number of years since the year the language was created (... - now): 46
-6: Incorrect type of language.
-Number of years since the year the language was created (... - now): 41
-7: Procedural
+0: Procedural
 Abstrat data type: 1
-Year of programming language: 2000
-Number of years since the year the language was created (... - now): 21
-8: Procedural
+Year of programming language: 1950
+Number of mentions of the language on the Internet: 3443
+Number of years since the year the language was created (... - now): 71
+1: Procedural
 Abstrat data type: 0
-Year of programming language: 2001
-Number of years since the year the language was created (... - now): 20
-9: Object-Oriented:
-inheritance: single
-Year of programming language: 2002
-Number of years since the year the language was created (... - now): 19
-10: Object-Oriented:
+Year of programming language: 2020
+Number of mentions of the language on the Internet: 32
+Number of years since the year the language was created (... - now): 1
+2: Object-Oriented:
 inheritance: multiple
-Year of programming language: 2003
-Number of years since the year the language was created (... - now): 18
+Year of programming language: 1989
+Number of mentions of the language on the Internet: 257
+Number of years since the year the language was created (... - now): 32
 Empty container. 
 Container is empty!

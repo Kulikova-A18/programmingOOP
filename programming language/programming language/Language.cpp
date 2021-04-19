@@ -36,11 +36,12 @@ Language* Language::In(ifstream& ifst)
 };
 
 void Language::InCommon(ifstream& ifst) {
-	ifst >> mData;
+	ifst >> mData >> mRef;
 };
 void Language::OutCommon(ofstream& ofst)
 {
 	ofst << "\nYear of programming language: " << mData << endl;
+	ofst << "Number of mentions of the language on the Internet: " << mRef << endl;
 };
 int Language::YearsPassed()
 {
