@@ -4,6 +4,7 @@ using namespace std;
 class Language
 {
 public:
+
 	static Language* In(ifstream& ifst);
 
 	virtual void InData(ifstream& ifst) = 0; // ввод

@@ -16,12 +16,15 @@ Language* Language::In(ifstream& ifst)
 	case 1:
 		lg = new Procedural();
 		break;
+
 	case 2:
 		lg = new ObjectOriented();
 		break;
+
 	case 3:
 		lg = new Functional();
 		break;
+
 	default:
 		char b;
 		ifst >> b;

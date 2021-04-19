@@ -1,8 +1,7 @@
 #pragma once
 #include "Language.h"
 
-class Functional : public Language
-{
+class Functional : public Language {
 public:
 	enum typification {
 		STRICT,
