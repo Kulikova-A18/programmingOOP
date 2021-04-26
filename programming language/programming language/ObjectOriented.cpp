@@ -21,14 +21,14 @@ void ObjectOriented::Out(ofstream &ofst)
 {
 	if (mInher == 0)
 	{
-		ofst << "Object-Oriented:" << endl << "inheritance: single";
+		ofst << "Object-Oriented" << endl << "inheritance: single";
 	}
 	else if (mInher == 1)
 	{
-		ofst << "Object-Oriented:" << endl << "inheritance: multiple";
+		ofst << "Object-Oriented" << endl << "inheritance: multiple";
 	}
 	else if (mInher == 2) {
-		ofst << "Object-Oriented:" << endl << "inheritance: interface";
+		ofst << "Object-Oriented" << endl << "inheritance: interface";
 	}
 	else
 	{
@@ -38,5 +38,20 @@ void ObjectOriented::Out(ofstream &ofst)
 
 	ofst << endl;
 	OutCommon(ofst);
+
+};
+
+void ObjectOriented::MultiMethod(Language* other, ofstream& ofst)
+{
+	other->MmOop(ofst);
+};
+void ObjectOriented::MmProc(ofstream& ofst)
+{
+	ofst << "OOP and Procedural." << endl;
+
+};
+void ObjectOriented::MmOop(ofstream& ofst)
+{
+	ofst << "OOP and OOP." << endl;
 
 };

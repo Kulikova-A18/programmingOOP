@@ -11,5 +11,10 @@ class ObjectOriented : public Language
 public:
 	void InData(ifstream &ifst); // ввод
 	void Out(ofstream &ofst); // вывод
+
+	virtual void MultiMethod(Language* other, ofstream& ofst);
+	virtual void MmProc(ofstream& ofst);
+	virtual void MmOop(ofstream& ofst);
+
 	ObjectOriented() {};
 };

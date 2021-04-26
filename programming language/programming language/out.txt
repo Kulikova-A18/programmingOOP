@@ -1,17 +1,46 @@
 Filled container. 
 Container contains that elements:
-0: Incorrect type of language.
-1: Incorrect type of language.
-2: Incorrect type of language.
-3: Incorrect type of language.
-4: Incorrect type of language.
-5: Incorrect type of language.
-6: Incorrect type of language.
-7: Incorrect type of language.
-8: Incorrect type of language.
-9: Incorrect type of language.
-10: Incorrect type of language.
-11: Incorrect type of language.
+0: Procedural
+Abstrat data type: 0
+Year of programming language: 2001
+1: Object-Oriented
+inheritance: single
+Year of programming language: 2002
+2: Object-Oriented
+inheritance: multiple
+Year of programming language: 2003
+
+Multimethod.
+0: OOP and Procedural.
+Procedural
+Abstrat data type: 0
+Year of programming language: 2001
+
+Object-Oriented
+inheritance: single
+Year of programming language: 2002
+
+
+1: OOP and Procedural.
+Procedural
+Abstrat data type: 0
+Year of programming language: 2001
+
+Object-Oriented
+inheritance: multiple
+Year of programming language: 2003
+
+
+2: OOP and OOP.
+Object-Oriented
+inheritance: single
+Year of programming language: 2002
+
+Object-Oriented
+inheritance: multiple
+Year of programming language: 2003
+
+
 Empty container. 
 
 Container is empty!

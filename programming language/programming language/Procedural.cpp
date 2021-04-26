@@ -23,3 +23,17 @@ void Procedural::Out(ofstream &ofst)
 	ofst << "Procedural" << endl<< "Abstrat data type: " <<  mAbstractDT<< endl;
 	OutCommon(ofst);
 };
+
+void Procedural::MultiMethod(Language* other, ofstream& ofst)
+{
+	other->MmProc(ofst);
+};
+void Procedural::MmProc(ofstream& ofst)
+{
+	ofst << "Procedural and Procedural." << endl;
+};
+void Procedural::MmOop(ofstream& ofst)
+{
+	ofst << "Procedural and OOP." << endl;
+
+};
