@@ -3,6 +3,7 @@
 #include "Language.h"
 
 class Procedural : public Language {
+
 	int mAbstractDT;
 public:
 	void InData(vector<int>& tail); // ввод

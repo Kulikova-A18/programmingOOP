@@ -1,2 +1,11 @@
-﻿  main.cpp
+﻿  Container.cpp
+C:\Users\USER\Desktop\TIMP\OOP\programmingOOP\programming language\programming language\Container.cpp(102,12): warning C4101: temp: неиспользованная локальная переменная
+  Container_Mult.cpp
+  Functional.cpp
+  Language.cpp
+  ObjectOriented.cpp
+  Procedural.cpp
+C:\Users\USER\Desktop\TIMP\OOP\programmingOOP\programming language\programming language\Procedural.cpp(20,24): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+  main.cpp
+  Создание кода...
   programming language.vcxproj -> C:\Users\USER\Desktop\TIMP\OOP\programmingOOP\programming language\Debug\programming language.exe

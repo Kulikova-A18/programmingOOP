@@ -5,7 +5,8 @@ void Procedural::InData(vector<int>& tail) {
 	if (tail.size() < 1) {
 		mIncorrectType = true;
 		return;
-	} else if (tail[0] == 1 || tail[0] == 0) {
+	} 
+	else if (tail[0] == 1 || tail[0] == 0) {
 		mAbstractDT = tail[0];
 	} else {
 		mIncorrectType = true;

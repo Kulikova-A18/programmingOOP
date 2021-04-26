@@ -3,6 +3,7 @@
 #include "Language.h"
 
 class ObjectOriented : public Language {
+
 public:
 	enum inheritance {
 		SINGLE,

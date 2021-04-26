@@ -1,4 +1,5 @@
 #include "Container.h"
+
 void Container::MultiMethod(ofstream& ofst)
 {
 	if (this->Next != nullptr)

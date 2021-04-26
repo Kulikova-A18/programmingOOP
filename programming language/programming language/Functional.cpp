@@ -1,6 +1,5 @@
-#pragma once
-
 #include "Functional.h"
+
 #include <vector>
 
 void Functional::InData(vector<int>& tail) {

@@ -3,6 +3,7 @@
 #include "Language.h"
 
 class Functional : public Language {
+
 public:
 	enum typification {
 		STRICT,

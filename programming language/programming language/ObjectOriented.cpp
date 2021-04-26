@@ -29,6 +29,7 @@ void ObjectOriented::Out(ofstream& ofst) {
 	ofst << endl;
 	OutCommon(ofst);
 };
+
 void ObjectOriented::MultiMethod(Language* other, ofstream& ofst)
 {
 	other->MmOop(ofst);
