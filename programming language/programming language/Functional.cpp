@@ -34,3 +34,23 @@ void Functional::Out(ofstream& ofst) {
 	}
 	OutCommon(ofst);
 };
+
+void Functional::MultiMethod(Language* other, ofstream& ofst)
+{
+	other->MmFunc(ofst);
+};
+void Functional::MmProc(ofstream& ofst)
+{
+	ofst << "Functional and Procedural." << endl;
+
+};
+void Functional::MmOop(ofstream& ofst)
+{
+	ofst << "Functional and OOP." << endl;
+
+};
+void Functional::MmFunc(ofstream& ofst)
+{
+	ofst << "Functional and Functional." << endl;
+
+};

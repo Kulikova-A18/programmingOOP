@@ -151,6 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Container.cpp" />
+    <ClCompile Include="Container_Mult.cpp" />
     <ClCompile Include="Functional.cpp" />
     <ClCompile Include="Language.cpp" />
     <ClCompile Include="main.cpp" />

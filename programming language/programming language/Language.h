@@ -15,6 +15,12 @@ public:
 	bool Compare(Language* second);
 	void InCommon(vector<int>& tail);
 	void OutCommon(ofstream& ofst);
+
+	virtual void MultiMethod(Language* other, ofstream& ofst) = 0;
+	virtual void MmProc(ofstream& ofst) = 0;
+	virtual void MmOop(ofstream& ofst) = 0;
+	virtual void MmFunc(ofstream& ofst) = 0;
+
 	short int GetmData() { 
 		return mData; 
 	}	

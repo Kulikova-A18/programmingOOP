@@ -24,6 +24,10 @@ int main(int argc, char* argv[]) {
 	ofst << endl << endl;
 	c.OutProc(ofst); //Only Procedural
 	ofst << endl << endl;
+
+	c.MultiMethod(ofst);
+	ofst << endl << endl;
+
 	c.Clear();
 	ofst << "Empty container. " << endl;
 	c.Out(ofst);

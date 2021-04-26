@@ -12,6 +12,9 @@ public:
 	void Clear(); // очистка контейнера от фигур
 	void Sort();
 	void Swap(Container* first, Container* second);
+
+	void MultiMethod(ofstream& ofst);
+
 	Container();
 	~Container() {}
 };

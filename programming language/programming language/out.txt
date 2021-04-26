@@ -6,15 +6,17 @@ Year of programming language: 2020
 Number of mentions of the language on the Internet: 1
 Number of years since the year the language was created (... - now): 1
 
-1: Incorrect type of language!!!	
-
-2: Incorrect type of language!!!	
-
-3: Object-Oriented:
+1: Object-Oriented:
 inheritance: single
 Year of programming language: 2021
 Number of mentions of the language on the Internet: 4
 Number of years since the year the language was created (... - now): 0
+
+2: Functional.
+lazy calculations: 1
+Typification:  DynamicYear of programming language: 2009
+Number of mentions of the language on the Internet: 6
+Number of years since the year the language was created (... - now): 12
 
 
 
@@ -26,24 +28,26 @@ Year of programming language: 2020
 Number of mentions of the language on the Internet: 1
 
 1: 
+
 2: 
-3: 
 
 
 
 Soreted container. 
 Container contains that elements:
-0: Procedural
+0: Functional.
+lazy calculations: 1
+Typification:  DynamicYear of programming language: 2009
+Number of mentions of the language on the Internet: 6
+Number of years since the year the language was created (... - now): 12
+
+1: Procedural
 Abstrat data type: 0
 Year of programming language: 2020
 Number of mentions of the language on the Internet: 1
 Number of years since the year the language was created (... - now): 1
 
-1: Incorrect type of language!!!	
-
-2: Incorrect type of language!!!	
-
-3: Object-Oriented:
+2: Object-Oriented:
 inheritance: single
 Year of programming language: 2021
 Number of mentions of the language on the Internet: 4
@@ -53,14 +57,54 @@ Number of years since the year the language was created (... - now): 0
 
 
 Only Procedural languages:
-0: Procedural
+0: 
+
+1: Procedural
 Abstrat data type: 0
 Year of programming language: 2020
 Number of mentions of the language on the Internet: 1
 
-1: 
 2: 
-3: 
+
+
+
+
+Multimethod.
+0: Procedural and Functional.
+Functional.
+lazy calculations: 1
+Typification:  DynamicYear of programming language: 2009
+Number of mentions of the language on the Internet: 6
+
+Procedural
+Abstrat data type: 0
+Year of programming language: 2020
+Number of mentions of the language on the Internet: 1
+
+
+1: OOP and Functional.
+Functional.
+lazy calculations: 1
+Typification:  DynamicYear of programming language: 2009
+Number of mentions of the language on the Internet: 6
+
+Object-Oriented:
+inheritance: single
+Year of programming language: 2021
+Number of mentions of the language on the Internet: 4
+
+
+2: OOP and Procedural.
+Procedural
+Abstrat data type: 0
+Year of programming language: 2020
+Number of mentions of the language on the Internet: 1
+
+Object-Oriented:
+inheritance: single
+Year of programming language: 2021
+Number of mentions of the language on the Internet: 4
+
 
 
 
